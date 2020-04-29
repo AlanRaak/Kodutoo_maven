@@ -9,7 +9,7 @@ import java.util.List;
 public class ForTestingOnly {
     public static void main(String[] args) {
         Teacher teacher1 = new Teacher("Moe", "Hp", Utils.dateToTypeZoneDateTime("2000", "12", "12", "03", "04"), 23);
-        Teacher teacher2 = new Teacher("Ye", "iu", Utils.dateToTypeZoneDateTime("2000", "12", "12", "03", "04"), 40);
+        Teacher teacher2 = new Teacher("Yes", "iu", Utils.dateToTypeZoneDateTime("2000", "12", "12", "03", "04"), 40);
         Teacher teacher3 = new Teacher("Ye", "iu", Utils.dateToTypeZoneDateTime("2000-10-04"), 40);
 
         Course course1 = new Course("OOP", 5, Utils.dateToTypeZoneDateTime("2000", "12", "12", "03", "04"), Utils.dateToTypeZoneDateTime("2000", "12", "12", "03", "04"), teacher1);
