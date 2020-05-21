@@ -31,6 +31,7 @@ public class CourseTest {
     public void getLengthTest() {
         ZonedDateTime start = school.util.Utils.dateToTypeZoneDateTime("2020-01-01");
         ZonedDateTime end = school.util.Utils.dateToTypeZoneDateTime("2020-12-27");
+
         course.setStartDate(start);
         course.setEndDate(end);
 
