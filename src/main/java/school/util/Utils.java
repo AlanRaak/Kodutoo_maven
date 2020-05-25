@@ -3,6 +3,7 @@ package school.util;
 import school.data.Student;
 import school.service.PublicHolidayService;
 
+import java.io.IOException;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -28,7 +29,7 @@ public class Utils {
         return date.format(DateTimeFormatter.ISO_LOCAL_DATE);
     }
 
-    public static int getNonWeekendHolidays(ZonedDateTime startingDate, ZonedDateTime endingDate) {
+    public static int getNonWeekendHolidays(ZonedDateTime startingDate, ZonedDateTime endingDate) throws IOException {
         PublicHolidayService holidayService = new PublicHolidayService();
         int holidays = 0;
 

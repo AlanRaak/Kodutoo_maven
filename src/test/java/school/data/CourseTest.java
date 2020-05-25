@@ -1,12 +1,13 @@
 package school.data;
 
-import school.service.PublicHolidayService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import school.service.PublicHolidayService;
 
+import java.io.IOException;
 import java.time.ZonedDateTime;
 
 import static org.junit.Assert.assertEquals;
@@ -28,7 +29,7 @@ public class CourseTest {
     }
 
     @Test
-    public void getLengthTest() {
+    public void getLengthTest() throws IOException {
         ZonedDateTime start = school.util.Utils.dateToTypeZoneDateTime("2020-01-01");
         ZonedDateTime end = school.util.Utils.dateToTypeZoneDateTime("2020-12-27");
 

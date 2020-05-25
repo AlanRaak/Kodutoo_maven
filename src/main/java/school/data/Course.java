@@ -1,5 +1,6 @@
 package school.data;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
@@ -27,7 +28,7 @@ public class Course {
         this.teacher = teacher;
     }
 
-    public long getNetLength() {
+    public long getNetLength() throws IOException {
         LocalDate start = startDate.toLocalDate();
         LocalDate end = endDate.toLocalDate().plusDays(1);
 

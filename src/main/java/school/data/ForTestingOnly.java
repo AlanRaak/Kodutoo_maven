@@ -3,11 +3,12 @@ package school.data;
 import school.service.PublicHolidayService;
 import school.util.Utils;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
 public class ForTestingOnly {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Teacher teacher1 = new Teacher("Moe", "Hp", Utils.dateToTypeZoneDateTime("2000", "12", "12", "03", "04"), 23);
         Teacher teacher2 = new Teacher("Yes", "iu", Utils.dateToTypeZoneDateTime("2000", "12", "12", "03", "04"), 40);
         Teacher teacher3 = new Teacher("Ye", "iu", Utils.dateToTypeZoneDateTime("2000-10-04"), 40);
